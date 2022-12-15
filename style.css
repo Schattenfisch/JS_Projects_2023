@@ -1,0 +1,10 @@
+html {
+    /* this will stop fucking up your dimensions if the content is too large*/
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* 100vh = the entire height*/
+    min-height: 100vh;
+}
