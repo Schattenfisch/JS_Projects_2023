@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Oxygen, Roboto;
+}
+
+div {}
+
+.nav {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+.nav div {
+    width: 50%;
+    height: 100%;
+}
+
+.nav div.name {
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+}
+
+.nav div.links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 75px;
+}
+
+.nav div.name a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.6em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.nav div.links a {
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/*Portfolio Skills and About Me*/
+
+.portfolioHeaderContainer {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.iconSide {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutmeSide {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconSide .iconPlaceholder {
+    width: 250px;
+    height: 250px;
+    background-image: url(/js.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.05);
+}
+
+.aboutmeSide h1 {
+    position: absolute;
+    top: 225px;
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.aboutmeSide p {
+    font-size: 1.5em;
+    max-width: 50%;
+    ;
+}
+
+/*Portfolio Title and Cards*/
+.portfolioTitle {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.portfolioTitle h1 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+
+.cardContainer {
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardContainer .card {
+    height: 600px;
+    width: 400px;
+    border: 1px solid black;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.05);
+
+}
+
+.cardContainer .card .topOfCard {
+    height: 60%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.cardContainer .card .bottomOfCard {
+    background-color: white;
+    height: 40%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Card Title and Buttons inside bottomOfCard*/
+
+.bottomOfCard-Title {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.bottomOfCard-Buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card h1 {
+    margin-bottom: 0;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid black;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.buttons:hover {
+    cursor: pointer;
+    filter: brightness(95%)
+}
+
+.buttons:active {
+    transform: scale(0.98)
+}
+
+.card .buttons {
+    width: 70%;
+    height: 60px;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.7);
+    border: 0;
+    border-radius: 25px;
+}
+
+.code {
+    background-color: rgb(255, 223, 0);
+}
+
+
+
+
+
+
+
+
+
+/*Unplash Project Card*/
+.card1 .topOfCard {
+    background-image: url(/unsplashgif.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/*Quote Project Card*/
+.card2 .topOfCard {
+    background-image: url(/quotegen.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Joke API Card*/
+.card3 .topOfCard {
+    background-image: url(/jokes.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
